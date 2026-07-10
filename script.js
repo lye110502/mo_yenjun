@@ -369,7 +369,7 @@ function bindSettings(){
   const noti=$('notificationBtn'); if(noti) noti.onclick=enablePushNotifications;
   const refresh=$('refreshDataBtn'); if(refresh) refresh.onclick=async()=>{await loadAll(); setSettingMessage('데이터를 새로고침했어요.');};
   const backup=$('backupDataBtn'); if(backup) backup.onclick=downloadBackup;
-  const info=$('appInfoBtn'); if(info) info.onclick=()=>setSettingMessage('교환일기 v3.2\n검은 ★ 패턴 / iMessage 블루 / PWA 버전\n데이터는 Google Sheets와 Apps Script에 저장돼요.');
+  const info=$('appInfoBtn'); if(info) info.onclick=()=>setSettingMessage('교환일기 v1 / 예으니가 만드러씀 500번 수정해씀. / PWA 버전\n데이터는 Google Sheets와 Apps Script에 저장돼요.');
   const logout=$('logoutBtn'); if(logout) logout.onclick=()=>{ $('app').classList.add('hidden'); $('login').classList.remove('hidden'); $('password').value=''; };
 }
 
