@@ -113,7 +113,7 @@ function openLetter(row){
       <div class="letter-locked">
         <div class="lock-mark">🔒</div>
         <h2>${esc(l.title)}</h2>
-        <p>아직 열 수 없어요.</p>
+        <p>아직 열 수 없어요 쪼꿈만 참으세요!!</p>
         <b>D-${days}</b>
       </div>`;
     show('letterDetail');
@@ -145,7 +145,7 @@ async function editLetter(row){
   const content=prompt('내용을 수정해요.', l.content || '');
   if(content===null)return;
   const cleanTitle=title.trim(), cleanContent=content.trim();
-  if(!cleanTitle || !cleanContent){alert('제목과 내용은 비워둘 수 없어요.');return;}
+  if(!cleanTitle || !cleanContent){alert('제목과 내용을 다 써야지여?');return;}
   const songUrl = l.songUrl || extractYouTubeUrl(cleanContent);
   const old={title:l.title, content:l.content, songUrl:l.songUrl};
   l.title=cleanTitle; l.content=cleanContent; if(!l.songUrl) l.songUrl=songUrl;
