@@ -114,7 +114,7 @@ function openLetter(row){
       <div class="letter-locked">
         <div class="lock-mark">🔒</div>
         <h2>${esc(l.title)}</h2>
-        <p>아직 열 수 없어요.</p>
+        <p>아직 열 수 없어요 쪼끔만 더 기다리용!!!!1</p>
         <b>D-${days}</b>
       </div>`;
     show('letterDetail');
@@ -156,7 +156,7 @@ async function editLetter(row){
   loadAll();
 }
 async function deleteLetter(row){
-  if(!confirm('이 편지를 삭제할까요?'))return;
+  if(!confirm('이 편지를 삭제할까요?ㅠㅠ'))return;
   const before=[...state.letters];
   rememberDeletedLetter(row);
   state.letters=state.letters.filter(x=>x.row!=row);
