@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbz2TbbRs49nIkZET3Nc_PDX-8Ylx38pr9NZYcbuzXWZH-Wo1f3bLcGr1EfsfI4WEqRh/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbyH0dvRz2VW9TlbVRpmdArL59Ptq4pQIJgsh96vkWA08QdFjyqptBVgU9THzjZ-TYTz/exec";
 const DEFAULT_PASSWORD = "0418";
 const FIREBASE_CONFIG = {
   apiKey: "AIzaSyCS5jVD_7h1hVUl7vTALZdqPFR4azXkghw",
